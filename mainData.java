@@ -20,8 +20,10 @@ public class mainData {
         Scanner input =new Scanner(System.in);
 
         System.out.println();
-        System.out.println("[option] [input file] for Search [option] [StudentName] [input file]");
+        System.out.println("[option] [input filePath  or fileName] for Search [option] [StudentName] [input filePath  or fileName]");
+        System.out.println();
         inputUser = input.nextLine();
+        System.out.println();
         StringTokenizer inu = new StringTokenizer(inputUser.trim(), " ");
         choiceLetter = inu.nextToken();
         if (choiceLetter.equals("-s")) {
